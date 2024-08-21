@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+body {
+  @apply text-gray-800 overflow-x-hidden;
+}
+/* Heading Styles */
+h1 {
+  @apply text-3xl font-bold mb-4 border-b-2 border-black py-2;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-3 border-b-[1px] border-black py-1;
+}
+
+h3 {
+  @apply text-xl font-bold mb-2;
+}
+
+/* Paragraph Styles */
+p {
+  @apply text-base leading-relaxed mb-4;
+}
+
+/* Link Styles */
+a {
+  @apply text-blue-500 underline;
+}
+
+a:hover {
+  @apply text-blue-700;
+}
+
+/* Button Styles */
+button {
+  @apply font-semibold text-white bg-blue-500 rounded-lg shadow-md;
+}
+
+button:hover {
+  @apply bg-blue-600;
+}
+
+/* List Styles */
+ul {
+  @apply list-disc pl-5 mb-4;
+}
+
+ol {
+  @apply list-decimal pl-5 mb-4;
+}
+
+/* Code Block Styles */
+code {
+  @apply font-mono text-sm bg-gray-100 p-1 rounded;
+}
+
+table {
+  @apply w-full border-collapse border border-black;
+}
+
+th,
+td {
+  @apply px-4 py-2 border border-black;
+}
+
+th {
+  @apply bg-gray-100 text-left font-semibold;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+tr:hover {
+  @apply bg-gray-200;
+}
+
+/* global.css */
+
+/* Unordered List Styles */
+ul {
+  @apply list-disc pl-5 mb-4;
+}
+
+ul ul {
+  @apply list-[circle] pl-4;
+}
+
+ul ul ul {
+  @apply list-[square] pl-4;
+}
+
+/* Ordered List Styles */
+ol {
+  @apply list-decimal pl-5 mb-4;
+}
+
+ol ol {
+  @apply list-inside pl-4;
+}
+
+ol ol ol {
+  @apply list-[lower-alpha] pl-4;
+}
+
+/* List Item Styles */
+li {
+  @apply mb-2;
+}
+
+blockquote {
+  @apply border-l-4 border-green-700 pl-4 italic text-gray-700;
+}
+
+blockquote p {
+  @apply m-0;
+}
+
+/* Enhanced Blockquote Example */
+.blockquote-enhanced {
+  @apply border-l-4 border-blue-500 bg-blue-50 p-4 italic text-blue-700;
+}
+
+pre {
+  @apply bg-white;
+}
+
+code {
+  @apply bg-white;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to left,
+    #ff000a,
+    #cb00cb,
+    #5300ff,
+    #cb00cb,
+    #ff000a,
+    #cb00cb,
+    #5300ff
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
+
+p {
+  @apply mb-0;
+}
+
+pre {
+  @apply p-4 overflow-x-scroll my-4;
+}
+
+.drum-pad {
+  @apply text-5xl p-4;
+}
+
+.switcher-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(32px);
+}
+
+.switcher-status {
+  font-size: 16px;
+  color: #333;
+}
